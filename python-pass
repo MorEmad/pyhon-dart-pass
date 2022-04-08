@@ -1,11 +1,16 @@
-x=input("enter x value: ")
-list=[]
-for i in range(int(x)):
-    n=input()
-    list.append(int(n))
-   
-for i in list:
-    if (i%2==0):
-      print(str(i)+" is even")
-    else:
-      print(str(i)+" is odd")
+def mor():
+ x=input("enter x value: ")
+ list=[]
+ y=int(x)
+ if y> 10 or y<0:
+     y=10
+     print("you entered an incorreect number, so you will enter only 10 numbers:")
+ for i in range(y):
+     n=input()
+     list.append(int(n))
+ for i in list:
+      if (i%2==0):
+        print(str(i)+" is even")
+      else:
+        print(str(i)+" is odd")
+mor() 
