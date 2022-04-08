@@ -1,0 +1,11 @@
+x=input("enter x value: ")
+list=[]
+for i in range(int(x)):
+    n=input()
+    list.append(int(n))
+   
+for i in list:
+    if (i%2==0):
+      print(str(i)+" is even")
+    else:
+      print(str(i)+" is odd")
